@@ -1,0 +1,1 @@
+# mintos-daily-summary-checker

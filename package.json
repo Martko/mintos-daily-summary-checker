@@ -1,0 +1,31 @@
+{
+  "name": "mintos-daily-summary-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martko/mintos-daily-summary-checker.git"
+  },
+  "keywords": [
+    "mintos"
+  ],
+  "author": "Martin Koidu",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "singleQuote": true
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martko/mintos-daily-summary-checker/issues"
+  },
+  "homepage": "https://github.com/Martko/mintos-daily-summary-checker#readme",
+  "dependencies": {
+    "imap-simple": "^4.3.0",
+    "mysql2": "^1.7.0"
+  }
+}

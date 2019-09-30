@@ -2,7 +2,7 @@ const getDailySummary = require('./summary-checker');
 const db = require('./db');
 
 (async () => {
-    const dailySummary = await getDailySummary(previousDayValues);
+    const dailySummary = await getDailySummary();
     const connection = await db.getConnection();
 
     const interestData = {

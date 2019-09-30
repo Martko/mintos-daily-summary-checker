@@ -4,6 +4,7 @@ export MINTOS_IMAP_HOST=
 export MINTOS_IMAP_PORT=
 export MINTOS_IMAP_USE_TLS=true
 export MINTOS_IMAP_AUTH_TIMEOUT=3000
+export MINTOS_IMAP_MARK_AS_READ=true
 
 
 export MYSQL_HOST=localhost

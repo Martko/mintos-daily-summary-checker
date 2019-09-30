@@ -15,7 +15,7 @@ module.exports = {
             tls: process.env.MINTOS_IMAP_USE_TLS === 'true',
             authTimeout: process.env.MINTOS_IMAP_AUTH_TIMEOUT,
         },
-        markAsRead: true,
+        markAsRead: process.env.MINTOS_IMAP_MARK_AS_READ === 'true',
     },
     mysql: {
         host: process.env.MYSQL_HOST,

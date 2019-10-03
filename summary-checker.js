@@ -48,6 +48,10 @@ module.exports = async function() {
             throw new Error(`More than one unread emails found.`);
         }
 
+        if (emails.length === 0) {
+            throw new Error(`No new interest data found.`);
+        }
+
         const email = emails.shift();
         const income = getIncomeData(email);
 
@@ -55,7 +59,7 @@ module.exports = async function() {
             income,
         };
     } catch (error) {
-        console.error(error);
+        throw error;
     } finally {
         connection.end();
     }

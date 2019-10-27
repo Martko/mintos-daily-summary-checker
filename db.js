@@ -12,7 +12,7 @@ const getConnection = async () => mysql.createConnection(config.mysql);
  */
 const insertDailyInterest = async (connection, object) => {
     const [rows] = await connection.execute(
-        'INSERT INTO `daily_interests` (date, source, total, net) VALUES (?,?,?,?)',
+        'INSERT INTO `daily_passive_income` (date, source, asset_class, total, net) VALUES (?,?,?,?,?)',
         Object.values(object)
     );
 

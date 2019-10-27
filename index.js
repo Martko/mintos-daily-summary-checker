@@ -9,6 +9,7 @@ const db = require('./db');
         const interestData = {
             date: dailySummary.income.date,
             source: 'mintos',
+            asset_class: 'loans_secured',
             total: dailySummary.income.totalIncome,
             net: dailySummary.income.totalIncome,
         };
